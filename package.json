@@ -1,6 +1,6 @@
 {
-  "name": "paxport-v2-sdk",
-  "version": "0.1.0",
+  "name": "@paxeer-network/paxport-v2-sdk",
+  "version": "0.2.0",
   "description": "The official TypeScript library for the Paxport V2 SDK API",
   "author": "Paxport V2 SDK <>",
   "types": "dist/index.d.ts",
