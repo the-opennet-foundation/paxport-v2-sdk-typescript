@@ -1,6 +1,6 @@
 // File generated from our OpenAPI spec by Stainless. See CONTRIBUTING.md for details.
 
-import PaxportV2SDK from 'paxport-v2-sdk';
+import PaxportV2SDK from 'paxport-v2-sdk-typescript';
 
 const client = new PaxportV2SDK({
   apiKey: 'My API Key',

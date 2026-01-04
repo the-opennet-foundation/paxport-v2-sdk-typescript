@@ -8,8 +8,8 @@
     "moduleResolution": "node",
     "esModuleInterop": true,
     "paths": {
-      "paxport-v2-sdk/*": ["./src/*"],
-      "paxport-v2-sdk": ["./src/index.ts"]
+      "paxport-v2-sdk-typescript/*": ["./src/*"],
+      "paxport-v2-sdk-typescript": ["./src/index.ts"]
     },
     "noEmit": true,
 
