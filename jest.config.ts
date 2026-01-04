@@ -7,8 +7,8 @@ const config: JestConfigWithTsJest = {
     '^.+\\.(t|j)sx?$': ['@swc/jest', { sourceMaps: 'inline' }],
   },
   moduleNameMapper: {
-    '^paxport-v2-sdk$': '<rootDir>/src/index.ts',
-    '^paxport-v2-sdk/(.*)$': '<rootDir>/src/$1',
+    '^paxport-v2-sdk-typescript$': '<rootDir>/src/index.ts',
+    '^paxport-v2-sdk-typescript/(.*)$': '<rootDir>/src/$1',
   },
   modulePathIgnorePatterns: [
     '<rootDir>/ecosystem-tests/',
