@@ -3,7 +3,7 @@ import {
   buildHeaders,
   type HeadersLike,
   type NullableHeaders,
-} from 'paxport-v2-sdk-typescript/internal/headers';
+} from '@paxeer-network/paxport-v2-sdk/internal/headers';
 
 function inspectNullableHeaders(headers: NullableHeaders) {
   return `NullableHeaders {${[

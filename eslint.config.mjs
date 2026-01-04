@@ -25,7 +25,7 @@ export default tseslint.config(
         {
           patterns: [
             {
-              regex: '^paxport-v2-sdk-typescript(/.*)?',
+              regex: '^@paxeer-network/paxport-v2-sdk(/.*)?',
               message: 'Use a relative import, not a package import.',
             },
           ],
