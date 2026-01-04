@@ -22,7 +22,7 @@ describe('resource author', () => {
 
   // Prism tests are disabled
   test.skip('retrieve', async () => {
-    const responsePromise = client.blog.author.retrieve();
+    const responsePromise = client.blog.author.retrieve('id');
     const rawResponse = await responsePromise.asResponse();
     expect(rawResponse).toBeInstanceOf(Response);
     const response = await responsePromise;

@@ -10,7 +10,7 @@ const client = new PaxportV2SDK({
 describe('resource currency', () => {
   // Prism tests are disabled
   test.skip('retrieve: only required params', async () => {
-    const responsePromise = client.finance.currency.retrieve('code', { type: 'FIAT' });
+    const responsePromise = client.finance.currency.retrieve('method', { type: 'SPOT', code: 'code' });
     const rawResponse = await responsePromise.asResponse();
     expect(rawResponse).toBeInstanceOf(Response);
     const response = await responsePromise;
@@ -22,7 +22,7 @@ describe('resource currency', () => {
 
   // Prism tests are disabled
   test.skip('retrieve: required and optional params', async () => {
-    const response = await client.finance.currency.retrieve('code', { type: 'FIAT', action: 'action' });
+    const response = await client.finance.currency.retrieve('method', { type: 'SPOT', code: 'code' });
   });
 
   // Prism tests are disabled

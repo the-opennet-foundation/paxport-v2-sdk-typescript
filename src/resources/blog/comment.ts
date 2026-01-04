@@ -28,11 +28,11 @@ export class Comment extends APIResource {
   }
 
   /**
-   * This endpoint retrieves all available comments along with their associated
-   * posts.
+   * This endpoint retrieves all comments for the specified post along with their
+   * associated posts.
    */
-  list(options?: RequestOptions): APIPromise<void> {
-    return this._client.get('/api/blog/comment', {
+  list(postID: string, options?: RequestOptions): APIPromise<void> {
+    return this._client.get(path`/api/blog/comment/${postID}`, {
       ...options,
       headers: buildHeaders([{ Accept: '*/*' }, options?.headers]),
     });

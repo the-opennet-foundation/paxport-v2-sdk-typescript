@@ -10,10 +10,9 @@ export class Currency extends APIResource {
   /**
    * This endpoint retrieves a single currency by its ID.
    */
-  retrieve(code: string, params: CurrencyRetrieveParams, options?: RequestOptions): APIPromise<void> {
-    const { type, ...query } = params;
-    return this._client.get(path`/api/finance/currency/${type}/${code}`, {
-      query,
+  retrieve(method: string, params: CurrencyRetrieveParams, options?: RequestOptions): APIPromise<void> {
+    const { type, code } = params;
+    return this._client.get(path`/api/finance/currency/${type}/${code}/${method}`, {
       ...options,
       headers: buildHeaders([{ Accept: '*/*' }, options?.headers]),
     });
@@ -64,15 +63,9 @@ export class Currency extends APIResource {
 }
 
 export interface CurrencyRetrieveParams {
-  /**
-   * Path param:
-   */
-  type: 'FIAT' | 'SPOT' | 'ECO' | 'FUTURES';
+  type: 'SPOT';
 
-  /**
-   * Query param: The action to perform
-   */
-  action?: string;
+  code: string;
 }
 
 export interface CurrencyListParams {
