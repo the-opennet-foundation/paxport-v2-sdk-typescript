@@ -1,10 +1,10 @@
 // File generated from our OpenAPI spec by Stainless. See CONTRIBUTING.md for details.
 
-import { APIPromise } from 'paxport-v2-sdk-typescript/core/api-promise';
+import { APIPromise } from '@paxeer-network/paxport-v2-sdk/core/api-promise';
 
 import util from 'node:util';
-import PaxportV2SDK from 'paxport-v2-sdk-typescript';
-import { APIUserAbortError } from 'paxport-v2-sdk-typescript';
+import PaxportV2SDK from '@paxeer-network/paxport-v2-sdk';
+import { APIUserAbortError } from '@paxeer-network/paxport-v2-sdk';
 const defaultFetch = fetch;
 
 describe('instantiate client', () => {

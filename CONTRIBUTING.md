@@ -55,12 +55,12 @@ $ cd paxport-v2-sdk-typescript
 # With yarn
 $ yarn link
 $ cd ../my-package
-$ yarn link paxport-v2-sdk-typescript
+$ yarn link @paxeer-network/paxport-v2-sdk
 
 # With pnpm
 $ pnpm link --global
 $ cd ../my-package
-$ pnpm link -—global paxport-v2-sdk-typescript
+$ pnpm link -—global @paxeer-network/paxport-v2-sdk
 ```
 
 ## Running tests

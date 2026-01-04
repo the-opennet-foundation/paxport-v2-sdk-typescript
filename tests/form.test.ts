@@ -1,5 +1,5 @@
-import { multipartFormRequestOptions, createForm } from 'paxport-v2-sdk-typescript/internal/uploads';
-import { toFile } from 'paxport-v2-sdk-typescript/core/uploads';
+import { multipartFormRequestOptions, createForm } from '@paxeer-network/paxport-v2-sdk/internal/uploads';
+import { toFile } from '@paxeer-network/paxport-v2-sdk/core/uploads';
 
 describe('form data validation', () => {
   test('valid values do not error', async () => {
