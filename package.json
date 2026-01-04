@@ -1,5 +1,5 @@
 {
-  "name": "paxport-v2-sdk-typescript",
+  "name": "paxport-v2-sdk",
   "version": "0.1.0",
   "description": "The official TypeScript library for the Paxport V2 SDK API",
   "author": "Paxport V2 SDK <>",
