@@ -25,7 +25,7 @@ export default tseslint.config(
         {
           patterns: [
             {
-              regex: '^paxport-v2-sdk(/.*)?',
+              regex: '^paxport-v2-sdk-typescript(/.*)?',
               message: 'Use a relative import, not a package import.',
             },
           ],
