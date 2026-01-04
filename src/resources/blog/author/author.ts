@@ -6,6 +6,7 @@ import { Manage, ManageListParams } from './manage/manage';
 import { APIPromise } from '../../../core/api-promise';
 import { buildHeaders } from '../../../internal/headers';
 import { RequestOptions } from '../../../internal/request-options';
+import { path } from '../../../internal/utils/path';
 
 export class Author extends APIResource {
   manage: ManageAPI.Manage = new ManageAPI.Manage(this._client);
@@ -24,8 +25,8 @@ export class Author extends APIResource {
    * This endpoint retrieves the author profile associated with a given user id along
    * with the posts linked to that profile.
    */
-  retrieve(options?: RequestOptions): APIPromise<void> {
-    return this._client.get('/api/blog/author', {
+  retrieve(id: string, options?: RequestOptions): APIPromise<void> {
+    return this._client.get(path`/api/blog/author/${id}`, {
       ...options,
       headers: buildHeaders([{ Accept: '*/*' }, options?.headers]),
     });

@@ -640,7 +640,7 @@ Methods:
 Methods:
 
 - <code title="post /api/blog/author">client.blog.author.<a href="./src/resources/blog/author/author.ts">create</a>() -> void</code>
-- <code title="get /api/blog/author">client.blog.author.<a href="./src/resources/blog/author/author.ts">retrieve</a>() -> void</code>
+- <code title="get /api/blog/author/{id}">client.blog.author.<a href="./src/resources/blog/author/author.ts">retrieve</a>(id) -> void</code>
 - <code title="get /api/blog/author/all">client.blog.author.<a href="./src/resources/blog/author/author.ts">list</a>({ ...params }) -> void</code>
 - <code title="get /api/blog/author/top">client.blog.author.<a href="./src/resources/blog/author/author.ts">getTop</a>() -> void</code>
 
@@ -673,7 +673,7 @@ Methods:
 
 - <code title="post /api/blog/comment/{postId}">client.blog.comment.<a href="./src/resources/blog/comment.ts">create</a>(postID) -> void</code>
 - <code title="put /api/blog/comment/{id}">client.blog.comment.<a href="./src/resources/blog/comment.ts">update</a>(id) -> void</code>
-- <code title="get /api/blog/comment">client.blog.comment.<a href="./src/resources/blog/comment.ts">list</a>() -> void</code>
+- <code title="get /api/blog/comment/{postId}">client.blog.comment.<a href="./src/resources/blog/comment.ts">list</a>(postID) -> void</code>
 
 ## Post
 
@@ -773,7 +773,7 @@ Methods:
 
 Methods:
 
-- <code title="get /api/finance/currency/{type}/{code}">client.finance.currency.<a href="./src/resources/finance/currency.ts">retrieve</a>(code, { ...params }) -> void</code>
+- <code title="get /api/finance/currency/{type}/{code}/{method}">client.finance.currency.<a href="./src/resources/finance/currency.ts">retrieve</a>(method, { ...params }) -> void</code>
 - <code title="get /api/finance/currency">client.finance.currency.<a href="./src/resources/finance/currency.ts">list</a>({ ...params }) -> void</code>
 - <code title="get /api/finance/currency/rate">client.finance.currency.<a href="./src/resources/finance/currency.ts">getExchangeRate</a>({ ...params }) -> void</code>
 - <code title="get /api/finance/currency/price">client.finance.currency.<a href="./src/resources/finance/currency.ts">getPrice</a>({ ...params }) -> void</code>

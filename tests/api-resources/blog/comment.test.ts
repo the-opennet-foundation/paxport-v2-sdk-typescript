@@ -34,7 +34,7 @@ describe('resource comment', () => {
 
   // Prism tests are disabled
   test.skip('list', async () => {
-    const responsePromise = client.blog.comment.list();
+    const responsePromise = client.blog.comment.list('postId');
     const rawResponse = await responsePromise.asResponse();
     expect(rawResponse).toBeInstanceOf(Response);
     const response = await responsePromise;
