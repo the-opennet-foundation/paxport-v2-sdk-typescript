@@ -5,8 +5,8 @@
   "compilerOptions": {
     "rootDir": "./dist/src",
     "paths": {
-      "paxport-v2-sdk/*": ["./dist/src/*"],
-      "paxport-v2-sdk": ["./dist/src/index.ts"]
+      "paxport-v2-sdk-typescript/*": ["./dist/src/*"],
+      "paxport-v2-sdk-typescript": ["./dist/src/index.ts"]
     },
     "noEmit": false,
     "declaration": true,
