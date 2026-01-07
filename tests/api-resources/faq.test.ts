@@ -49,7 +49,13 @@ describe('resource faq', () => {
     // ensure the request options are being passed correctly by passing an invalid HTTP method in order to cause an error
     await expect(
       client.faq.listPublic(
-        { active: 'active', category: 'category', limit: 0, page: 0, search: 'search' },
+        {
+          active: 'active',
+          category: 'category',
+          limit: 0,
+          page: 0,
+          search: 'search',
+        },
         { path: '/_stainless_unknown_path' },
       ),
     ).rejects.toThrow(PaxportV2SDK.NotFoundError);

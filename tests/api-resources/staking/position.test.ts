@@ -37,7 +37,12 @@ describe('resource position', () => {
     // ensure the request options are being passed correctly by passing an invalid HTTP method in order to cause an error
     await expect(
       client.staking.position.list(
-        { limit: 1, page: 1, poolId: 'poolId', status: 'ACTIVE' },
+        {
+          limit: 1,
+          page: 1,
+          poolId: 'poolId',
+          status: 'ACTIVE',
+        },
         { path: '/_stainless_unknown_path' },
       ),
     ).rejects.toThrow(PaxportV2SDK.NotFoundError);

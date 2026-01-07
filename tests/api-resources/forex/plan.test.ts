@@ -37,7 +37,13 @@ describe('resource plan', () => {
     // ensure the request options are being passed correctly by passing an invalid HTTP method in order to cause an error
     await expect(
       client.forex.plan.list(
-        { activeTab: 'all', maxInvestment: 0, minProfit: 0, search: 'search', sortBy: 'popularity' },
+        {
+          activeTab: 'all',
+          maxInvestment: 0,
+          minProfit: 0,
+          search: 'search',
+          sortBy: 'popularity',
+        },
         { path: '/_stainless_unknown_path' },
       ),
     ).rejects.toThrow(PaxportV2SDK.NotFoundError);

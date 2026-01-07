@@ -37,7 +37,11 @@ describe('resource order', () => {
     // ensure the request options are being passed correctly by passing an invalid HTTP method in order to cause an error
     await expect(
       client.futures.order.list(
-        { currency: 'currency', pair: 'pair', type: 'type' },
+        {
+          currency: 'currency',
+          pair: 'pair',
+          type: 'type',
+        },
         { path: '/_stainless_unknown_path' },
       ),
     ).rejects.toThrow(PaxportV2SDK.NotFoundError);

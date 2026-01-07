@@ -37,7 +37,11 @@ describe('resource eway', () => {
     // ensure the request options are being passed correctly by passing an invalid HTTP method in order to cause an error
     await expect(
       client.finance.deposit.fiat.eway.retrieveStatus(
-        { access_code: 'access_code', reference: 'reference', transaction_id: 'transaction_id' },
+        {
+          access_code: 'access_code',
+          reference: 'reference',
+          transaction_id: 'transaction_id',
+        },
         { path: '/_stainless_unknown_path' },
       ),
     ).rejects.toThrow(PaxportV2SDK.NotFoundError);
