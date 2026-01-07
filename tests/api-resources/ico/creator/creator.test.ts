@@ -25,7 +25,13 @@ describe('resource creator', () => {
     // ensure the request options are being passed correctly by passing an invalid HTTP method in order to cause an error
     await expect(
       client.ico.creator.retrieveInvestor(
-        { limit: 0, page: 0, search: 'search', sortDirection: 'sortDirection', sortField: 'sortField' },
+        {
+          limit: 0,
+          page: 0,
+          search: 'search',
+          sortDirection: 'sortDirection',
+          sortField: 'sortField',
+        },
         { path: '/_stainless_unknown_path' },
       ),
     ).rejects.toThrow(PaxportV2SDK.NotFoundError);

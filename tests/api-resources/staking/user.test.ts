@@ -25,7 +25,11 @@ describe('resource user', () => {
     // ensure the request options are being passed correctly by passing an invalid HTTP method in order to cause an error
     await expect(
       client.staking.user.getEarnings(
-        { claimed: true, poolId: 'poolId', timeframe: 'week' },
+        {
+          claimed: true,
+          poolId: 'poolId',
+          timeframe: 'week',
+        },
         { path: '/_stainless_unknown_path' },
       ),
     ).rejects.toThrow(PaxportV2SDK.NotFoundError);

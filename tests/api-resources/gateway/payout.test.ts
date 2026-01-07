@@ -37,7 +37,11 @@ describe('resource payout', () => {
     // ensure the request options are being passed correctly by passing an invalid HTTP method in order to cause an error
     await expect(
       client.gateway.payout.list(
-        { page: 0, perPage: 0, status: 'status' },
+        {
+          page: 0,
+          perPage: 0,
+          status: 'status',
+        },
         { path: '/_stainless_unknown_path' },
       ),
     ).rejects.toThrow(PaxportV2SDK.NotFoundError);
