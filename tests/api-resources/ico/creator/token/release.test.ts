@@ -26,8 +26,8 @@ describe('resource release', () => {
   });
 
   // Prism tests are disabled
-  test.skip('list: only required params', async () => {
-    const responsePromise = client.ico.creator.token.release.list('id', { body_id: 'id' });
+  test.skip('list', async () => {
+    const responsePromise = client.ico.creator.token.release.list('id');
     const rawResponse = await responsePromise.asResponse();
     expect(rawResponse).toBeInstanceOf(Response);
     const response = await responsePromise;
@@ -38,14 +38,20 @@ describe('resource release', () => {
   });
 
   // Prism tests are disabled
-  test.skip('list: required and optional params', async () => {
-    const response = await client.ico.creator.token.release.list('id', {
-      body_id: 'id',
-      limit: 0,
-      page: 0,
-      sortDirection: 'sortDirection',
-      sortField: 'sortField',
-      status: 'status',
-    });
+  test.skip('list: request options and params are passed correctly', async () => {
+    // ensure the request options are being passed correctly by passing an invalid HTTP method in order to cause an error
+    await expect(
+      client.ico.creator.token.release.list(
+        'id',
+        {
+          limit: 0,
+          page: 0,
+          sortDirection: 'sortDirection',
+          sortField: 'sortField',
+          status: 'status',
+        },
+        { path: '/_stainless_unknown_path' },
+      ),
+    ).rejects.toThrow(PaxportV2SDK.NotFoundError);
   });
 });

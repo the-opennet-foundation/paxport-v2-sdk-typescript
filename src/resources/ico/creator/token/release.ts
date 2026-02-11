@@ -23,9 +23,12 @@ export class Release extends APIResource {
    * Retrieves token release transactions for a given token (offering) ID, optionally
    * filtered by status and paginated with sorting support.
    */
-  list(pathID: string, params: ReleaseListParams, options?: RequestOptions): APIPromise<void> {
-    const { body_id, ...query } = params;
-    return this._client.get(path`/api/ico/creator/token/${pathID}/release`, {
+  list(
+    id: string,
+    query: ReleaseListParams | null | undefined = {},
+    options?: RequestOptions,
+  ): APIPromise<void> {
+    return this._client.get(path`/api/ico/creator/token/${id}/release`, {
       query,
       ...options,
       headers: buildHeaders([{ Accept: '*/*' }, options?.headers]),
@@ -42,33 +45,28 @@ export interface ReleaseUpdateParams {
 
 export interface ReleaseListParams {
   /**
-   * Body param: Token (offering) ID
-   */
-  body_id: string;
-
-  /**
-   * Query param: Number of items per page
+   * Number of items per page
    */
   limit?: number;
 
   /**
-   * Query param: Page number
+   * Page number
    */
   page?: number;
 
   /**
-   * Query param: Sort direction: asc or desc (default is desc)
+   * Sort direction: asc or desc (default is desc)
    */
   sortDirection?: string;
 
   /**
-   * Query param: Field to sort by (default is createdAt). For associated models use
-   * dot notation (e.g., 'user.firstName')
+   * Field to sort by (default is createdAt). For associated models use dot notation
+   * (e.g., 'user.firstName')
    */
   sortField?: string;
 
   /**
-   * Query param: Filter transactions by status (PENDING, VERIFICATION, RELEASED)
+   * Filter transactions by status (PENDING, VERIFICATION, RELEASED)
    */
   status?: string;
 }

@@ -404,7 +404,7 @@ Methods:
 Methods:
 
 - <code title="put /api/ico/creator/token/{id}/release/{transactionId}">client.ico.creator.token.release.<a href="./src/resources/ico/creator/token/release.ts">update</a>(transactionID, { ...params }) -> void</code>
-- <code title="get /api/ico/creator/token/{id}/release">client.ico.creator.token.release.<a href="./src/resources/ico/creator/token/release.ts">list</a>(pathID, { ...params }) -> void</code>
+- <code title="get /api/ico/creator/token/{id}/release">client.ico.creator.token.release.<a href="./src/resources/ico/creator/token/release.ts">list</a>(id, { ...params }) -> void</code>
 
 #### Roadmap
 
