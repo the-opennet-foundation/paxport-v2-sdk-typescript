@@ -8,7 +8,7 @@ const client = new PaxportV2SDK({
 });
 
 describe('resource deposit', () => {
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('spot', async () => {
     const responsePromise = client.finance.deposit.spot();
     const rawResponse = await responsePromise.asResponse();

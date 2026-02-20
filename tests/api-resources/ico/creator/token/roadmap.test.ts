@@ -8,7 +8,7 @@ const client = new PaxportV2SDK({
 });
 
 describe('resource roadmap', () => {
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('create', async () => {
     const responsePromise = client.ico.creator.token.roadmap.create('id');
     const rawResponse = await responsePromise.asResponse();
@@ -20,7 +20,7 @@ describe('resource roadmap', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('update: only required params', async () => {
     const responsePromise = client.ico.creator.token.roadmap.update('roadmapId', { id: 'id' });
     const rawResponse = await responsePromise.asResponse();
@@ -32,12 +32,12 @@ describe('resource roadmap', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('update: required and optional params', async () => {
     const response = await client.ico.creator.token.roadmap.update('roadmapId', { id: 'id' });
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('list', async () => {
     const responsePromise = client.ico.creator.token.roadmap.list('id');
     const rawResponse = await responsePromise.asResponse();

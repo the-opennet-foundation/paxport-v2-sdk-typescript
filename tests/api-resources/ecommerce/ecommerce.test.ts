@@ -8,7 +8,7 @@ const client = new PaxportV2SDK({
 });
 
 describe('resource ecommerce', () => {
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('getLandingData', async () => {
     const responsePromise = client.ecommerce.getLandingData();
     const rawResponse = await responsePromise.asResponse();
@@ -20,7 +20,7 @@ describe('resource ecommerce', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('getShippingRecords', async () => {
     const responsePromise = client.ecommerce.getShippingRecords();
     const rawResponse = await responsePromise.asResponse();
@@ -32,7 +32,7 @@ describe('resource ecommerce', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('getStats', async () => {
     const responsePromise = client.ecommerce.getStats();
     const rawResponse = await responsePromise.asResponse();
@@ -44,7 +44,7 @@ describe('resource ecommerce', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('submitReview', async () => {
     const responsePromise = client.ecommerce.submitReview('productId');
     const rawResponse = await responsePromise.asResponse();

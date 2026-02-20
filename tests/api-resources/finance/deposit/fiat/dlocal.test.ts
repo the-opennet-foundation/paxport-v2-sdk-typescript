@@ -8,7 +8,7 @@ const client = new PaxportV2SDK({
 });
 
 describe('resource dlocal', () => {
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('create', async () => {
     const responsePromise = client.finance.deposit.fiat.dlocal.create();
     const rawResponse = await responsePromise.asResponse();
@@ -20,7 +20,7 @@ describe('resource dlocal', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('retrieveStatus', async () => {
     const responsePromise = client.finance.deposit.fiat.dlocal.retrieveStatus();
     const rawResponse = await responsePromise.asResponse();
@@ -32,7 +32,7 @@ describe('resource dlocal', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('retrieveStatus: request options and params are passed correctly', async () => {
     // ensure the request options are being passed correctly by passing an invalid HTTP method in order to cause an error
     await expect(
@@ -43,7 +43,7 @@ describe('resource dlocal', () => {
     ).rejects.toThrow(PaxportV2SDK.NotFoundError);
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('verify', async () => {
     const responsePromise = client.finance.deposit.fiat.dlocal.verify();
     const rawResponse = await responsePromise.asResponse();
@@ -55,7 +55,7 @@ describe('resource dlocal', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('webhook', async () => {
     const responsePromise = client.finance.deposit.fiat.dlocal.webhook();
     const rawResponse = await responsePromise.asResponse();

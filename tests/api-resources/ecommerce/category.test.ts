@@ -8,7 +8,7 @@ const client = new PaxportV2SDK({
 });
 
 describe('resource category', () => {
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('retrieve', async () => {
     const responsePromise = client.ecommerce.category.retrieve('slug');
     const rawResponse = await responsePromise.asResponse();
@@ -20,7 +20,7 @@ describe('resource category', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('list', async () => {
     const responsePromise = client.ecommerce.category.list();
     const rawResponse = await responsePromise.asResponse();
@@ -32,7 +32,7 @@ describe('resource category', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('listProducts', async () => {
     const responsePromise = client.ecommerce.category.listProducts('slug');
     const rawResponse = await responsePromise.asResponse();

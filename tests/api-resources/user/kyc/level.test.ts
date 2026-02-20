@@ -8,7 +8,7 @@ const client = new PaxportV2SDK({
 });
 
 describe('resource level', () => {
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('retrieve', async () => {
     const responsePromise = client.user.kyc.level.retrieve('id');
     const rawResponse = await responsePromise.asResponse();
@@ -20,7 +20,7 @@ describe('resource level', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('list', async () => {
     const responsePromise = client.user.kyc.level.list();
     const rawResponse = await responsePromise.asResponse();

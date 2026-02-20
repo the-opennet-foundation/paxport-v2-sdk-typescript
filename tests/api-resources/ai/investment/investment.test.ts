@@ -8,7 +8,7 @@ const client = new PaxportV2SDK({
 });
 
 describe('resource investment', () => {
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('listPlans', async () => {
     const responsePromise = client.ai.investment.listPlans();
     const rawResponse = await responsePromise.asResponse();

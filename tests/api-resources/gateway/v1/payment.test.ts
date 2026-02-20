@@ -8,7 +8,7 @@ const client = new PaxportV2SDK({
 });
 
 describe('resource payment', () => {
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('retrieve', async () => {
     const responsePromise = client.gateway.v1.payment.retrieve('id');
     const rawResponse = await responsePromise.asResponse();
@@ -20,7 +20,7 @@ describe('resource payment', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('cancel', async () => {
     const responsePromise = client.gateway.v1.payment.cancel('id');
     const rawResponse = await responsePromise.asResponse();
@@ -32,7 +32,7 @@ describe('resource payment', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('createSession', async () => {
     const responsePromise = client.gateway.v1.payment.createSession();
     const rawResponse = await responsePromise.asResponse();

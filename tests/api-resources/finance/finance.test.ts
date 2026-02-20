@@ -8,7 +8,7 @@ const client = new PaxportV2SDK({
 });
 
 describe('resource finance', () => {
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('getExchangeRate: only required params', async () => {
     const responsePromise = client.finance.getExchangeRate({
       fromCurrency: 'fromCurrency',
@@ -25,7 +25,7 @@ describe('resource finance', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('getExchangeRate: required and optional params', async () => {
     const response = await client.finance.getExchangeRate({
       fromCurrency: 'fromCurrency',

@@ -8,7 +8,7 @@ const client = new PaxportV2SDK({
 });
 
 describe('resource position', () => {
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('create', async () => {
     const responsePromise = client.staking.position.create();
     const rawResponse = await responsePromise.asResponse();
@@ -20,7 +20,7 @@ describe('resource position', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('list', async () => {
     const responsePromise = client.staking.position.list();
     const rawResponse = await responsePromise.asResponse();
@@ -32,7 +32,7 @@ describe('resource position', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('list: request options and params are passed correctly', async () => {
     // ensure the request options are being passed correctly by passing an invalid HTTP method in order to cause an error
     await expect(
@@ -48,7 +48,7 @@ describe('resource position', () => {
     ).rejects.toThrow(PaxportV2SDK.NotFoundError);
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('claimEarnings', async () => {
     const responsePromise = client.staking.position.claimEarnings('id');
     const rawResponse = await responsePromise.asResponse();
@@ -60,7 +60,7 @@ describe('resource position', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('getDetails', async () => {
     const responsePromise = client.staking.position.getDetails('id');
     const rawResponse = await responsePromise.asResponse();
@@ -72,7 +72,7 @@ describe('resource position', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('getEarnings', async () => {
     const responsePromise = client.staking.position.getEarnings('id');
     const rawResponse = await responsePromise.asResponse();
@@ -84,7 +84,7 @@ describe('resource position', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('getEarnings: request options and params are passed correctly', async () => {
     // ensure the request options are being passed correctly by passing an invalid HTTP method in order to cause an error
     await expect(
@@ -92,7 +92,7 @@ describe('resource position', () => {
     ).rejects.toThrow(PaxportV2SDK.NotFoundError);
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('requestWithdrawal', async () => {
     const responsePromise = client.staking.position.requestWithdrawal('id');
     const rawResponse = await responsePromise.asResponse();

@@ -8,7 +8,7 @@ const client = new PaxportV2SDK({
 });
 
 describe('resource offer', () => {
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('create', async () => {
     const responsePromise = client.p2p.offer.create();
     const rawResponse = await responsePromise.asResponse();
@@ -20,7 +20,7 @@ describe('resource offer', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('update', async () => {
     const responsePromise = client.p2p.offer.update('id');
     const rawResponse = await responsePromise.asResponse();
@@ -32,7 +32,7 @@ describe('resource offer', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('list', async () => {
     const responsePromise = client.p2p.offer.list();
     const rawResponse = await responsePromise.asResponse();
@@ -44,7 +44,7 @@ describe('resource offer', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('list: request options and params are passed correctly', async () => {
     // ensure the request options are being passed correctly by passing an invalid HTTP method in order to cause an error
     await expect(
@@ -62,7 +62,7 @@ describe('resource offer', () => {
     ).rejects.toThrow(PaxportV2SDK.NotFoundError);
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('delete', async () => {
     const responsePromise = client.p2p.offer.delete('id');
     const rawResponse = await responsePromise.asResponse();
@@ -74,7 +74,7 @@ describe('resource offer', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('getByID', async () => {
     const responsePromise = client.p2p.offer.getByID('id');
     const rawResponse = await responsePromise.asResponse();
@@ -86,7 +86,7 @@ describe('resource offer', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('getPopular: only required params', async () => {
     const responsePromise = client.p2p.offer.getPopular({ limit: 0 });
     const rawResponse = await responsePromise.asResponse();
@@ -98,12 +98,12 @@ describe('resource offer', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('getPopular: required and optional params', async () => {
     const response = await client.p2p.offer.getPopular({ limit: 0 });
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('getUserOffers', async () => {
     const responsePromise = client.p2p.offer.getUserOffers();
     const rawResponse = await responsePromise.asResponse();
@@ -115,7 +115,7 @@ describe('resource offer', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('initiateTrade', async () => {
     const responsePromise = client.p2p.offer.initiateTrade('182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e');
     const rawResponse = await responsePromise.asResponse();

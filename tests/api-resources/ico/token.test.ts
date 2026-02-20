@@ -8,7 +8,7 @@ const client = new PaxportV2SDK({
 });
 
 describe('resource token', () => {
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('retrieveType', async () => {
     const responsePromise = client.ico.token.retrieveType();
     const rawResponse = await responsePromise.asResponse();

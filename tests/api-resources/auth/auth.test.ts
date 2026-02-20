@@ -8,7 +8,7 @@ const client = new PaxportV2SDK({
 });
 
 describe('resource auth', () => {
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('listRoles', async () => {
     const responsePromise = client.auth.listRoles();
     const rawResponse = await responsePromise.asResponse();
@@ -20,7 +20,7 @@ describe('resource auth', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('logout', async () => {
     const responsePromise = client.auth.logout();
     const rawResponse = await responsePromise.asResponse();
@@ -32,7 +32,7 @@ describe('resource auth', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('resetPassword', async () => {
     const responsePromise = client.auth.resetPassword();
     const rawResponse = await responsePromise.asResponse();
@@ -44,7 +44,7 @@ describe('resource auth', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('retrieveSession', async () => {
     const responsePromise = client.auth.retrieveSession();
     const rawResponse = await responsePromise.asResponse();

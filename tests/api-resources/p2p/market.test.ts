@@ -8,7 +8,7 @@ const client = new PaxportV2SDK({
 });
 
 describe('resource market', () => {
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('getHighlights', async () => {
     const responsePromise = client.p2p.market.getHighlights();
     const rawResponse = await responsePromise.asResponse();
@@ -20,7 +20,7 @@ describe('resource market', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('getStats', async () => {
     const responsePromise = client.p2p.market.getStats();
     const rawResponse = await responsePromise.asResponse();
@@ -32,7 +32,7 @@ describe('resource market', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('getTopCryptos', async () => {
     const responsePromise = client.p2p.market.getTopCryptos();
     const rawResponse = await responsePromise.asResponse();

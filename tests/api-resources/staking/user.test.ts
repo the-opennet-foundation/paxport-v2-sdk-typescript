@@ -8,7 +8,7 @@ const client = new PaxportV2SDK({
 });
 
 describe('resource user', () => {
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('getEarnings', async () => {
     const responsePromise = client.staking.user.getEarnings();
     const rawResponse = await responsePromise.asResponse();
@@ -20,7 +20,7 @@ describe('resource user', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('getEarnings: request options and params are passed correctly', async () => {
     // ensure the request options are being passed correctly by passing an invalid HTTP method in order to cause an error
     await expect(
@@ -35,7 +35,7 @@ describe('resource user', () => {
     ).rejects.toThrow(PaxportV2SDK.NotFoundError);
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('getSummary', async () => {
     const responsePromise = client.staking.user.getSummary();
     const rawResponse = await responsePromise.asResponse();

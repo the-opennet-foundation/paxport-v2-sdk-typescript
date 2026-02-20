@@ -8,7 +8,7 @@ const client = new PaxportV2SDK({
 });
 
 describe('resource chat', () => {
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('retrieveOrCreate', async () => {
     const responsePromise = client.user.support.chat.retrieveOrCreate();
     const rawResponse = await responsePromise.asResponse();
@@ -20,7 +20,7 @@ describe('resource chat', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('sendMessage', async () => {
     const responsePromise = client.user.support.chat.sendMessage();
     const rawResponse = await responsePromise.asResponse();

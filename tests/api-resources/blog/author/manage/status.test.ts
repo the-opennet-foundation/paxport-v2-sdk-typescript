@@ -8,7 +8,7 @@ const client = new PaxportV2SDK({
 });
 
 describe('resource status', () => {
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('update', async () => {
     const responsePromise = client.blog.author.manage.status.update('id');
     const rawResponse = await responsePromise.asResponse();
@@ -20,7 +20,7 @@ describe('resource status', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('bulkUpdate', async () => {
     const responsePromise = client.blog.author.manage.status.bulkUpdate();
     const rawResponse = await responsePromise.asResponse();

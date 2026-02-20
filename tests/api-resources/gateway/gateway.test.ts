@@ -8,7 +8,7 @@ const client = new PaxportV2SDK({
 });
 
 describe('resource gateway', () => {
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('getBalance', async () => {
     const responsePromise = client.gateway.getBalance();
     const rawResponse = await responsePromise.asResponse();
@@ -20,7 +20,7 @@ describe('resource gateway', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('getLandingData', async () => {
     const responsePromise = client.gateway.getLandingData();
     const rawResponse = await responsePromise.asResponse();
@@ -32,7 +32,7 @@ describe('resource gateway', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('getSettings', async () => {
     const responsePromise = client.gateway.getSettings();
     const rawResponse = await responsePromise.asResponse();
@@ -44,7 +44,7 @@ describe('resource gateway', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('getStats', async () => {
     const responsePromise = client.gateway.getStats();
     const rawResponse = await responsePromise.asResponse();

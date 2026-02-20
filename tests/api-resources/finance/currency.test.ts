@@ -8,7 +8,7 @@ const client = new PaxportV2SDK({
 });
 
 describe('resource currency', () => {
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('retrieve: only required params', async () => {
     const responsePromise = client.finance.currency.retrieve('method', { type: 'SPOT', code: 'code' });
     const rawResponse = await responsePromise.asResponse();
@@ -20,12 +20,12 @@ describe('resource currency', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('retrieve: required and optional params', async () => {
     const response = await client.finance.currency.retrieve('method', { type: 'SPOT', code: 'code' });
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('list: only required params', async () => {
     const responsePromise = client.finance.currency.list({ walletType: 'FIAT' });
     const rawResponse = await responsePromise.asResponse();
@@ -37,7 +37,7 @@ describe('resource currency', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('list: required and optional params', async () => {
     const response = await client.finance.currency.list({
       walletType: 'FIAT',
@@ -46,7 +46,7 @@ describe('resource currency', () => {
     });
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('getExchangeRate: only required params', async () => {
     const responsePromise = client.finance.currency.getExchangeRate({
       fromCurrency: 'fromCurrency',
@@ -63,7 +63,7 @@ describe('resource currency', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('getExchangeRate: required and optional params', async () => {
     const response = await client.finance.currency.getExchangeRate({
       fromCurrency: 'fromCurrency',
@@ -73,7 +73,7 @@ describe('resource currency', () => {
     });
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('getPrice: only required params', async () => {
     const responsePromise = client.finance.currency.getPrice({ currency: 'currency', type: 'type' });
     const rawResponse = await responsePromise.asResponse();
@@ -85,12 +85,12 @@ describe('resource currency', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('getPrice: required and optional params', async () => {
     const response = await client.finance.currency.getPrice({ currency: 'currency', type: 'type' });
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('listValid', async () => {
     const responsePromise = client.finance.currency.listValid();
     const rawResponse = await responsePromise.asResponse();

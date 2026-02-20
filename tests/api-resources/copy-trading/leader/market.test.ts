@@ -8,7 +8,7 @@ const client = new PaxportV2SDK({
 });
 
 describe('resource market', () => {
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('addMarket', async () => {
     const responsePromise = client.copyTrading.leader.market.addMarket();
     const rawResponse = await responsePromise.asResponse();
@@ -20,7 +20,7 @@ describe('resource market', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('getDeclaredMarkets', async () => {
     const responsePromise = client.copyTrading.leader.market.getDeclaredMarkets('id');
     const rawResponse = await responsePromise.asResponse();
@@ -32,7 +32,7 @@ describe('resource market', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('getDeclaredMarketsWithCounts', async () => {
     const responsePromise = client.copyTrading.leader.market.getDeclaredMarketsWithCounts();
     const rawResponse = await responsePromise.asResponse();
@@ -44,7 +44,7 @@ describe('resource market', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('toggleStatus', async () => {
     const responsePromise = client.copyTrading.leader.market.toggleStatus('symbol');
     const rawResponse = await responsePromise.asResponse();
@@ -56,7 +56,7 @@ describe('resource market', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('updateSettings', async () => {
     const responsePromise = client.copyTrading.leader.market.updateSettings('symbol');
     const rawResponse = await responsePromise.asResponse();

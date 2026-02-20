@@ -8,7 +8,7 @@ const client = new PaxportV2SDK({
 });
 
 describe('resource update', () => {
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('create', async () => {
     const responsePromise = client.ico.creator.update.create();
     const rawResponse = await responsePromise.asResponse();
@@ -20,7 +20,7 @@ describe('resource update', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('update', async () => {
     const responsePromise = client.ico.creator.update.update('id');
     const rawResponse = await responsePromise.asResponse();
@@ -32,7 +32,7 @@ describe('resource update', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('list', async () => {
     const responsePromise = client.ico.creator.update.list();
     const rawResponse = await responsePromise.asResponse();

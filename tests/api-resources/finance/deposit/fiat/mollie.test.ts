@@ -8,7 +8,7 @@ const client = new PaxportV2SDK({
 });
 
 describe('resource mollie', () => {
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('create', async () => {
     const responsePromise = client.finance.deposit.fiat.mollie.create();
     const rawResponse = await responsePromise.asResponse();
@@ -20,7 +20,7 @@ describe('resource mollie', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('retrieveStatus: only required params', async () => {
     const responsePromise = client.finance.deposit.fiat.mollie.retrieveStatus({
       transactionId: 'transactionId',
@@ -34,14 +34,14 @@ describe('resource mollie', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('retrieveStatus: required and optional params', async () => {
     const response = await client.finance.deposit.fiat.mollie.retrieveStatus({
       transactionId: 'transactionId',
     });
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('verify', async () => {
     const responsePromise = client.finance.deposit.fiat.mollie.verify();
     const rawResponse = await responsePromise.asResponse();
@@ -53,7 +53,7 @@ describe('resource mollie', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('webhook', async () => {
     const responsePromise = client.finance.deposit.fiat.mollie.webhook();
     const rawResponse = await responsePromise.asResponse();

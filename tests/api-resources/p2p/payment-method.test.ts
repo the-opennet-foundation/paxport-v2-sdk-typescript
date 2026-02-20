@@ -8,7 +8,7 @@ const client = new PaxportV2SDK({
 });
 
 describe('resource paymentMethod', () => {
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('create', async () => {
     const responsePromise = client.p2p.paymentMethod.create();
     const rawResponse = await responsePromise.asResponse();
@@ -20,7 +20,7 @@ describe('resource paymentMethod', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('update', async () => {
     const responsePromise = client.p2p.paymentMethod.update('id');
     const rawResponse = await responsePromise.asResponse();
@@ -32,7 +32,7 @@ describe('resource paymentMethod', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('list', async () => {
     const responsePromise = client.p2p.paymentMethod.list();
     const rawResponse = await responsePromise.asResponse();

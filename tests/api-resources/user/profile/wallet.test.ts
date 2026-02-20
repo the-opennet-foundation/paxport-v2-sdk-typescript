@@ -8,7 +8,7 @@ const client = new PaxportV2SDK({
 });
 
 describe('resource wallet', () => {
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('connect', async () => {
     const responsePromise = client.user.profile.wallet.connect();
     const rawResponse = await responsePromise.asResponse();
@@ -20,7 +20,7 @@ describe('resource wallet', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('disconnect', async () => {
     const responsePromise = client.user.profile.wallet.disconnect();
     const rawResponse = await responsePromise.asResponse();

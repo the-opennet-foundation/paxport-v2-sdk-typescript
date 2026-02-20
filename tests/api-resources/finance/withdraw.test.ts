@@ -8,7 +8,7 @@ const client = new PaxportV2SDK({
 });
 
 describe('resource withdraw', () => {
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('createFiat', async () => {
     const responsePromise = client.finance.withdraw.createFiat();
     const rawResponse = await responsePromise.asResponse();
@@ -20,7 +20,7 @@ describe('resource withdraw', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('createSpot', async () => {
     const responsePromise = client.finance.withdraw.createSpot();
     const rawResponse = await responsePromise.asResponse();

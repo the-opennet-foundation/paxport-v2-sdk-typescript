@@ -8,7 +8,7 @@ const client = new PaxportV2SDK({
 });
 
 describe('resource trade', () => {
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('cancel', async () => {
     const responsePromise = client.p2p.trade.cancel('id');
     const rawResponse = await responsePromise.asResponse();
@@ -20,7 +20,7 @@ describe('resource trade', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('confirmPayment', async () => {
     const responsePromise = client.p2p.trade.confirmPayment('id');
     const rawResponse = await responsePromise.asResponse();
@@ -32,7 +32,7 @@ describe('resource trade', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('dispute', async () => {
     const responsePromise = client.p2p.trade.dispute('182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e');
     const rawResponse = await responsePromise.asResponse();
@@ -44,7 +44,7 @@ describe('resource trade', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('getByID', async () => {
     const responsePromise = client.p2p.trade.getByID('id');
     const rawResponse = await responsePromise.asResponse();
@@ -56,7 +56,7 @@ describe('resource trade', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('getDashboardData', async () => {
     const responsePromise = client.p2p.trade.getDashboardData();
     const rawResponse = await responsePromise.asResponse();
@@ -68,7 +68,7 @@ describe('resource trade', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('getHistory', async () => {
     const responsePromise = client.p2p.trade.getHistory();
     const rawResponse = await responsePromise.asResponse();
@@ -80,7 +80,7 @@ describe('resource trade', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('getHistory: request options and params are passed correctly', async () => {
     // ensure the request options are being passed correctly by passing an invalid HTTP method in order to cause an error
     await expect(
@@ -102,7 +102,7 @@ describe('resource trade', () => {
     ).rejects.toThrow(PaxportV2SDK.NotFoundError);
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('releaseFunds', async () => {
     const responsePromise = client.p2p.trade.releaseFunds('id');
     const rawResponse = await responsePromise.asResponse();
@@ -114,7 +114,7 @@ describe('resource trade', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('submitReview', async () => {
     const responsePromise = client.p2p.trade.submitReview('id');
     const rawResponse = await responsePromise.asResponse();

@@ -8,7 +8,7 @@ const client = new PaxportV2SDK({
 });
 
 describe('resource binary', () => {
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('listDurations', async () => {
     const responsePromise = client.exchange.binary.listDurations();
     const rawResponse = await responsePromise.asResponse();
@@ -20,7 +20,7 @@ describe('resource binary', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('listMarkets', async () => {
     const responsePromise = client.exchange.binary.listMarkets();
     const rawResponse = await responsePromise.asResponse();

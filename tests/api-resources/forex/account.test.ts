@@ -8,7 +8,7 @@ const client = new PaxportV2SDK({
 });
 
 describe('resource account', () => {
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('retrieve', async () => {
     const responsePromise = client.forex.account.retrieve('id');
     const rawResponse = await responsePromise.asResponse();
@@ -20,7 +20,7 @@ describe('resource account', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('list', async () => {
     const responsePromise = client.forex.account.list();
     const rawResponse = await responsePromise.asResponse();
@@ -32,7 +32,7 @@ describe('resource account', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('deposit', async () => {
     const responsePromise = client.forex.account.deposit('id');
     const rawResponse = await responsePromise.asResponse();
@@ -44,7 +44,7 @@ describe('resource account', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('getSignals', async () => {
     const responsePromise = client.forex.account.getSignals('id');
     const rawResponse = await responsePromise.asResponse();
@@ -56,7 +56,7 @@ describe('resource account', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('withdraw', async () => {
     const responsePromise = client.forex.account.withdraw('id');
     const rawResponse = await responsePromise.asResponse();

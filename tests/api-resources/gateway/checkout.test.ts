@@ -8,7 +8,7 @@ const client = new PaxportV2SDK({
 });
 
 describe('resource checkout', () => {
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('retrieve', async () => {
     const responsePromise = client.gateway.checkout.retrieve('paymentIntentId');
     const rawResponse = await responsePromise.asResponse();
@@ -20,7 +20,7 @@ describe('resource checkout', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('cancel', async () => {
     const responsePromise = client.gateway.checkout.cancel('paymentIntentId');
     const rawResponse = await responsePromise.asResponse();
@@ -32,7 +32,7 @@ describe('resource checkout', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('confirm', async () => {
     const responsePromise = client.gateway.checkout.confirm('paymentIntentId');
     const rawResponse = await responsePromise.asResponse();
@@ -44,7 +44,7 @@ describe('resource checkout', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('getWallets', async () => {
     const responsePromise = client.gateway.checkout.getWallets('paymentIntentId');
     const rawResponse = await responsePromise.asResponse();

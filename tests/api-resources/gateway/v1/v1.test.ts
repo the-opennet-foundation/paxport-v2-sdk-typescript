@@ -8,7 +8,7 @@ const client = new PaxportV2SDK({
 });
 
 describe('resource v1', () => {
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('validate', async () => {
     const responsePromise = client.gateway.v1.validate();
     const rawResponse = await responsePromise.asResponse();

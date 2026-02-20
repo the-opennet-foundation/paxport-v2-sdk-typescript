@@ -8,7 +8,7 @@ const client = new PaxportV2SDK({
 });
 
 describe('resource wallet', () => {
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('retrieve: only required params', async () => {
     const responsePromise = client.finance.wallet.retrieve('currency', { type: 'FIAT' });
     const rawResponse = await responsePromise.asResponse();
@@ -20,12 +20,12 @@ describe('resource wallet', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('retrieve: required and optional params', async () => {
     const response = await client.finance.wallet.retrieve('currency', { type: 'FIAT' });
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('list', async () => {
     const responsePromise = client.finance.wallet.list();
     const rawResponse = await responsePromise.asResponse();
@@ -37,7 +37,7 @@ describe('resource wallet', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('list: request options and params are passed correctly', async () => {
     // ensure the request options are being passed correctly by passing an invalid HTTP method in order to cause an error
     await expect(
@@ -56,7 +56,7 @@ describe('resource wallet', () => {
     ).rejects.toThrow(PaxportV2SDK.NotFoundError);
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('getStats', async () => {
     const responsePromise = client.finance.wallet.getStats();
     const rawResponse = await responsePromise.asResponse();
@@ -68,7 +68,7 @@ describe('resource wallet', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('getTransferOptions', async () => {
     const responsePromise = client.finance.wallet.getTransferOptions();
     const rawResponse = await responsePromise.asResponse();
@@ -80,7 +80,7 @@ describe('resource wallet', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('getTypes', async () => {
     const responsePromise = client.finance.wallet.getTypes();
     const rawResponse = await responsePromise.asResponse();
@@ -92,7 +92,7 @@ describe('resource wallet', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('listByType', async () => {
     const responsePromise = client.finance.wallet.listByType('FIAT');
     const rawResponse = await responsePromise.asResponse();
@@ -104,7 +104,7 @@ describe('resource wallet', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('retrieveBySymbol: only required params', async () => {
     const responsePromise = client.finance.wallet.retrieveBySymbol({
       currency: 'currency',
@@ -120,7 +120,7 @@ describe('resource wallet', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('retrieveBySymbol: required and optional params', async () => {
     const response = await client.finance.wallet.retrieveBySymbol({
       currency: 'currency',

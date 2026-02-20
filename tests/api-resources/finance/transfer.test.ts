@@ -8,7 +8,7 @@ const client = new PaxportV2SDK({
 });
 
 describe('resource transfer', () => {
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('create', async () => {
     const responsePromise = client.finance.transfer.create();
     const rawResponse = await responsePromise.asResponse();
@@ -20,7 +20,7 @@ describe('resource transfer', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('validateRecipient: only required params', async () => {
     const responsePromise = client.finance.transfer.validateRecipient({ uuid: 'uuid' });
     const rawResponse = await responsePromise.asResponse();
@@ -32,7 +32,7 @@ describe('resource transfer', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('validateRecipient: required and optional params', async () => {
     const response = await client.finance.transfer.validateRecipient({ uuid: 'uuid' });
   });

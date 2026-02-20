@@ -8,7 +8,7 @@ const client = new PaxportV2SDK({
 });
 
 describe('resource payu', () => {
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('create', async () => {
     const responsePromise = client.finance.deposit.fiat.payu.create();
     const rawResponse = await responsePromise.asResponse();
@@ -20,7 +20,7 @@ describe('resource payu', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('retrieveStatus: only required params', async () => {
     const responsePromise = client.finance.deposit.fiat.payu.retrieveStatus({ txnid: 'txnid' });
     const rawResponse = await responsePromise.asResponse();
@@ -32,12 +32,12 @@ describe('resource payu', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('retrieveStatus: required and optional params', async () => {
     const response = await client.finance.deposit.fiat.payu.retrieveStatus({ txnid: 'txnid' });
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('verify', async () => {
     const responsePromise = client.finance.deposit.fiat.payu.verify();
     const rawResponse = await responsePromise.asResponse();
@@ -49,7 +49,7 @@ describe('resource payu', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('webhook', async () => {
     const responsePromise = client.finance.deposit.fiat.payu.webhook();
     const rawResponse = await responsePromise.asResponse();

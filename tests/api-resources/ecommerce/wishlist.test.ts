@@ -8,7 +8,7 @@ const client = new PaxportV2SDK({
 });
 
 describe('resource wishlist', () => {
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('retrieve', async () => {
     const responsePromise = client.ecommerce.wishlist.retrieve();
     const rawResponse = await responsePromise.asResponse();
@@ -20,7 +20,7 @@ describe('resource wishlist', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('add', async () => {
     const responsePromise = client.ecommerce.wishlist.add();
     const rawResponse = await responsePromise.asResponse();

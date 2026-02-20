@@ -8,7 +8,7 @@ const client = new PaxportV2SDK({
 });
 
 describe('resource merchant', () => {
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('getDashboard', async () => {
     const responsePromise = client.gateway.merchant.getDashboard();
     const rawResponse = await responsePromise.asResponse();
@@ -20,7 +20,7 @@ describe('resource merchant', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('getDashboard: request options and params are passed correctly', async () => {
     // ensure the request options are being passed correctly by passing an invalid HTTP method in order to cause an error
     await expect(
@@ -28,7 +28,7 @@ describe('resource merchant', () => {
     ).rejects.toThrow(PaxportV2SDK.NotFoundError);
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('register', async () => {
     const responsePromise = client.gateway.merchant.register();
     const rawResponse = await responsePromise.asResponse();
@@ -40,7 +40,7 @@ describe('resource merchant', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('updateProfile', async () => {
     const responsePromise = client.gateway.merchant.updateProfile();
     const rawResponse = await responsePromise.asResponse();

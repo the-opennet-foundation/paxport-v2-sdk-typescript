@@ -8,7 +8,7 @@ const client = new PaxportV2SDK({
 });
 
 describe('resource creator', () => {
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('retrieveInvestor', async () => {
     const responsePromise = client.ico.creator.retrieveInvestor();
     const rawResponse = await responsePromise.asResponse();
@@ -20,7 +20,7 @@ describe('resource creator', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('retrieveInvestor: request options and params are passed correctly', async () => {
     // ensure the request options are being passed correctly by passing an invalid HTTP method in order to cause an error
     await expect(
@@ -37,7 +37,7 @@ describe('resource creator', () => {
     ).rejects.toThrow(PaxportV2SDK.NotFoundError);
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('retrievePerformance: only required params', async () => {
     const responsePromise = client.ico.creator.retrievePerformance({ range: 'range' });
     const rawResponse = await responsePromise.asResponse();
@@ -49,12 +49,12 @@ describe('resource creator', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('retrievePerformance: required and optional params', async () => {
     const response = await client.ico.creator.retrievePerformance({ range: 'range' });
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('retrieveStat', async () => {
     const responsePromise = client.ico.creator.retrieveStat();
     const rawResponse = await responsePromise.asResponse();

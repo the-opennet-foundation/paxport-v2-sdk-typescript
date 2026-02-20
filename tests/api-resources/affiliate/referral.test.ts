@@ -8,7 +8,7 @@ const client = new PaxportV2SDK({
 });
 
 describe('resource referral', () => {
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('getAnalysisData', async () => {
     const responsePromise = client.affiliate.referral.getAnalysisData();
     const rawResponse = await responsePromise.asResponse();
@@ -20,7 +20,7 @@ describe('resource referral', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('getDetails', async () => {
     const responsePromise = client.affiliate.referral.getDetails('id');
     const rawResponse = await responsePromise.asResponse();
@@ -32,7 +32,7 @@ describe('resource referral', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('getNodeDetails', async () => {
     const responsePromise = client.affiliate.referral.getNodeDetails();
     const rawResponse = await responsePromise.asResponse();
@@ -44,7 +44,7 @@ describe('resource referral', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('listReferrals', async () => {
     const responsePromise = client.affiliate.referral.listReferrals();
     const rawResponse = await responsePromise.asResponse();
@@ -56,7 +56,7 @@ describe('resource referral', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('listReferrals: request options and params are passed correctly', async () => {
     // ensure the request options are being passed correctly by passing an invalid HTTP method in order to cause an error
     await expect(

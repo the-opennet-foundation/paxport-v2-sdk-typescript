@@ -8,7 +8,7 @@ const client = new PaxportV2SDK({
 });
 
 describe('resource deposit', () => {
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('unlock: only required params', async () => {
     const responsePromise = client.ecosystem.deposit.unlock({ address: 'address' });
     const rawResponse = await responsePromise.asResponse();
@@ -20,7 +20,7 @@ describe('resource deposit', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('unlock: required and optional params', async () => {
     const response = await client.ecosystem.deposit.unlock({ address: 'address' });
   });

@@ -8,7 +8,7 @@ const client = new PaxportV2SDK({
 });
 
 describe('resource market', () => {
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('retrieve', async () => {
     const responsePromise = client.exchange.market.retrieve('id');
     const rawResponse = await responsePromise.asResponse();
@@ -20,7 +20,7 @@ describe('resource market', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('list: only required params', async () => {
     const responsePromise = client.exchange.market.list({ eco: 'eco' });
     const rawResponse = await responsePromise.asResponse();
@@ -32,7 +32,7 @@ describe('resource market', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('list: required and optional params', async () => {
     const response = await client.exchange.market.list({ eco: 'eco' });
   });

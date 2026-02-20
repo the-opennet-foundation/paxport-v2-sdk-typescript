@@ -8,7 +8,7 @@ const client = new PaxportV2SDK({
 });
 
 describe('resource me', () => {
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('getProfile', async () => {
     const responsePromise = client.copyTrading.leader.me.getProfile();
     const rawResponse = await responsePromise.asResponse();
@@ -20,7 +20,7 @@ describe('resource me', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('updateProfile', async () => {
     const responsePromise = client.copyTrading.leader.me.updateProfile();
     const rawResponse = await responsePromise.asResponse();

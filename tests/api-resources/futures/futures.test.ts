@@ -8,7 +8,7 @@ const client = new PaxportV2SDK({
 });
 
 describe('resource futures', () => {
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('listPositions', async () => {
     const responsePromise = client.futures.listPositions();
     const rawResponse = await responsePromise.asResponse();
@@ -20,7 +20,7 @@ describe('resource futures', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('listPositions: request options and params are passed correctly', async () => {
     // ensure the request options are being passed correctly by passing an invalid HTTP method in order to cause an error
     await expect(
@@ -35,7 +35,7 @@ describe('resource futures', () => {
     ).rejects.toThrow(PaxportV2SDK.NotFoundError);
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('listTickers', async () => {
     const responsePromise = client.futures.listTickers();
     const rawResponse = await responsePromise.asResponse();
@@ -47,7 +47,7 @@ describe('resource futures', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('retrieveChart: only required params', async () => {
     const responsePromise = client.futures.retrieveChart({
       from: 0,
@@ -64,7 +64,7 @@ describe('resource futures', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('retrieveChart: required and optional params', async () => {
     const response = await client.futures.retrieveChart({
       from: 0,
