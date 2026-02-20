@@ -8,7 +8,7 @@ const client = new PaxportV2SDK({
 });
 
 describe('resource pool', () => {
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('list', async () => {
     const responsePromise = client.staking.pool.list();
     const rawResponse = await responsePromise.asResponse();
@@ -20,7 +20,7 @@ describe('resource pool', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('list: request options and params are passed correctly', async () => {
     // ensure the request options are being passed correctly by passing an invalid HTTP method in order to cause an error
     await expect(
@@ -36,7 +36,7 @@ describe('resource pool', () => {
     ).rejects.toThrow(PaxportV2SDK.NotFoundError);
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('getAnalytics', async () => {
     const responsePromise = client.staking.pool.getAnalytics('id');
     const rawResponse = await responsePromise.asResponse();
@@ -48,7 +48,7 @@ describe('resource pool', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('getAnalytics: request options and params are passed correctly', async () => {
     // ensure the request options are being passed correctly by passing an invalid HTTP method in order to cause an error
     await expect(
@@ -56,7 +56,7 @@ describe('resource pool', () => {
     ).rejects.toThrow(PaxportV2SDK.NotFoundError);
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('getDetails', async () => {
     const responsePromise = client.staking.pool.getDetails('id');
     const rawResponse = await responsePromise.asResponse();

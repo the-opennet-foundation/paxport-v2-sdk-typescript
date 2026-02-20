@@ -8,7 +8,7 @@ const client = new PaxportV2SDK({
 });
 
 describe('resource register', () => {
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('default', async () => {
     const responsePromise = client.auth.register.default();
     const rawResponse = await responsePromise.asResponse();
@@ -20,7 +20,7 @@ describe('resource register', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('google', async () => {
     const responsePromise = client.auth.register.google();
     const rawResponse = await responsePromise.asResponse();

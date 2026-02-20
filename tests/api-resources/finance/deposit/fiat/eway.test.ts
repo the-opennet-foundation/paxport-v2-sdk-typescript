@@ -8,7 +8,7 @@ const client = new PaxportV2SDK({
 });
 
 describe('resource eway', () => {
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('create', async () => {
     const responsePromise = client.finance.deposit.fiat.eway.create();
     const rawResponse = await responsePromise.asResponse();
@@ -20,7 +20,7 @@ describe('resource eway', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('retrieveStatus', async () => {
     const responsePromise = client.finance.deposit.fiat.eway.retrieveStatus();
     const rawResponse = await responsePromise.asResponse();
@@ -32,7 +32,7 @@ describe('resource eway', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('retrieveStatus: request options and params are passed correctly', async () => {
     // ensure the request options are being passed correctly by passing an invalid HTTP method in order to cause an error
     await expect(
@@ -47,7 +47,7 @@ describe('resource eway', () => {
     ).rejects.toThrow(PaxportV2SDK.NotFoundError);
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('verify', async () => {
     const responsePromise = client.finance.deposit.fiat.eway.verify();
     const rawResponse = await responsePromise.asResponse();

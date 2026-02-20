@@ -8,7 +8,7 @@ const client = new PaxportV2SDK({
 });
 
 describe('resource stripe', () => {
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('create', async () => {
     const responsePromise = client.finance.deposit.fiat.stripe.create();
     const rawResponse = await responsePromise.asResponse();
@@ -20,7 +20,7 @@ describe('resource stripe', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('verified: only required params', async () => {
     const responsePromise = client.finance.deposit.fiat.stripe.verified({ sessionId: 'sessionId' });
     const rawResponse = await responsePromise.asResponse();
@@ -32,12 +32,12 @@ describe('resource stripe', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('verified: required and optional params', async () => {
     const response = await client.finance.deposit.fiat.stripe.verified({ sessionId: 'sessionId' });
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('verify: only required params', async () => {
     const responsePromise = client.finance.deposit.fiat.stripe.verify({ sessionId: 'sessionId' });
     const rawResponse = await responsePromise.asResponse();
@@ -49,12 +49,12 @@ describe('resource stripe', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('verify: required and optional params', async () => {
     const response = await client.finance.deposit.fiat.stripe.verify({ sessionId: 'sessionId' });
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('verifyIntent: only required params', async () => {
     const responsePromise = client.finance.deposit.fiat.stripe.verifyIntent({ intentId: 'intentId' });
     const rawResponse = await responsePromise.asResponse();
@@ -66,7 +66,7 @@ describe('resource stripe', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('verifyIntent: required and optional params', async () => {
     const response = await client.finance.deposit.fiat.stripe.verifyIntent({ intentId: 'intentId' });
   });

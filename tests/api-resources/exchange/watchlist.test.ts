@@ -8,7 +8,7 @@ const client = new PaxportV2SDK({
 });
 
 describe('resource watchlist', () => {
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('list', async () => {
     const responsePromise = client.exchange.watchlist.list();
     const rawResponse = await responsePromise.asResponse();
@@ -20,7 +20,7 @@ describe('resource watchlist', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('add', async () => {
     const responsePromise = client.exchange.watchlist.add();
     const rawResponse = await responsePromise.asResponse();

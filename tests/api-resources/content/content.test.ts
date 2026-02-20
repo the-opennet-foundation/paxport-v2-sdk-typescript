@@ -8,7 +8,7 @@ const client = new PaxportV2SDK({
 });
 
 describe('resource content', () => {
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('listSliders', async () => {
     const responsePromise = client.content.listSliders();
     const rawResponse = await responsePromise.asResponse();
@@ -20,7 +20,7 @@ describe('resource content', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('retrieveDefaultPage', async () => {
     const responsePromise = client.content.retrieveDefaultPage('pageId');
     const rawResponse = await responsePromise.asResponse();
@@ -32,7 +32,7 @@ describe('resource content', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('retrieveDefaultPage: request options and params are passed correctly', async () => {
     // ensure the request options are being passed correctly by passing an invalid HTTP method in order to cause an error
     await expect(
@@ -44,7 +44,7 @@ describe('resource content', () => {
     ).rejects.toThrow(PaxportV2SDK.NotFoundError);
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('retrieveLandingStats', async () => {
     const responsePromise = client.content.retrieveLandingStats();
     const rawResponse = await responsePromise.asResponse();

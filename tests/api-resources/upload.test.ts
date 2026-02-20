@@ -8,7 +8,7 @@ const client = new PaxportV2SDK({
 });
 
 describe('resource upload', () => {
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('convertHeicToJpeg', async () => {
     const responsePromise = client.upload.convertHeicToJpeg();
     const rawResponse = await responsePromise.asResponse();
@@ -20,7 +20,7 @@ describe('resource upload', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('uploadFile', async () => {
     const responsePromise = client.upload.uploadFile();
     const rawResponse = await responsePromise.asResponse();
@@ -32,7 +32,7 @@ describe('resource upload', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('uploadKYCDocument', async () => {
     const responsePromise = client.upload.uploadKYCDocument();
     const rawResponse = await responsePromise.asResponse();

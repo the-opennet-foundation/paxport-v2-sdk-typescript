@@ -8,7 +8,7 @@ const client = new PaxportV2SDK({
 });
 
 describe('resource notification', () => {
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('getAll', async () => {
     const responsePromise = client.user.notification.getAll();
     const rawResponse = await responsePromise.asResponse();
@@ -20,7 +20,7 @@ describe('resource notification', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('markAllAsRead', async () => {
     const responsePromise = client.user.notification.markAllAsRead();
     const rawResponse = await responsePromise.asResponse();
@@ -32,7 +32,7 @@ describe('resource notification', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('markAsRead', async () => {
     const responsePromise = client.user.notification.markAsRead('id');
     const rawResponse = await responsePromise.asResponse();
@@ -44,7 +44,7 @@ describe('resource notification', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('markAsUnread', async () => {
     const responsePromise = client.user.notification.markAsUnread('id');
     const rawResponse = await responsePromise.asResponse();

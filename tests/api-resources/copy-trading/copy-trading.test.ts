@@ -8,7 +8,7 @@ const client = new PaxportV2SDK({
 });
 
 describe('resource copyTrading', () => {
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('getAnalytics', async () => {
     const responsePromise = client.copyTrading.getAnalytics();
     const rawResponse = await responsePromise.asResponse();
@@ -20,7 +20,7 @@ describe('resource copyTrading', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('getAnalytics: request options and params are passed correctly', async () => {
     // ensure the request options are being passed correctly by passing an invalid HTTP method in order to cause an error
     await expect(
@@ -28,7 +28,7 @@ describe('resource copyTrading', () => {
     ).rejects.toThrow(PaxportV2SDK.NotFoundError);
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('getDashboard', async () => {
     const responsePromise = client.copyTrading.getDashboard();
     const rawResponse = await responsePromise.asResponse();
@@ -40,7 +40,7 @@ describe('resource copyTrading', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('getLandingPageData', async () => {
     const responsePromise = client.copyTrading.getLandingPageData();
     const rawResponse = await responsePromise.asResponse();
@@ -52,7 +52,7 @@ describe('resource copyTrading', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('getPlatformStats', async () => {
     const responsePromise = client.copyTrading.getPlatformStats();
     const rawResponse = await responsePromise.asResponse();
@@ -64,7 +64,7 @@ describe('resource copyTrading', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('getTransactions', async () => {
     const responsePromise = client.copyTrading.getTransactions();
     const rawResponse = await responsePromise.asResponse();
@@ -76,7 +76,7 @@ describe('resource copyTrading', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('getTransactions: request options and params are passed correctly', async () => {
     // ensure the request options are being passed correctly by passing an invalid HTTP method in order to cause an error
     await expect(

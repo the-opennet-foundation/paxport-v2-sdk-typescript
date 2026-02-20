@@ -8,7 +8,7 @@ const client = new PaxportV2SDK({
 });
 
 describe('resource verify', () => {
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('email', async () => {
     const responsePromise = client.auth.verify.email();
     const rawResponse = await responsePromise.asResponse();
@@ -20,7 +20,7 @@ describe('resource verify', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('resendEmail', async () => {
     const responsePromise = client.auth.verify.resendEmail();
     const rawResponse = await responsePromise.asResponse();
@@ -32,7 +32,7 @@ describe('resource verify', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('resetPassword', async () => {
     const responsePromise = client.auth.verify.resetPassword();
     const rawResponse = await responsePromise.asResponse();

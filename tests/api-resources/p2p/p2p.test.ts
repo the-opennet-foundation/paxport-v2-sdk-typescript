@@ -8,7 +8,7 @@ const client = new PaxportV2SDK({
 });
 
 describe('resource p2p', () => {
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('getLandingData', async () => {
     const responsePromise = client.p2p.getLandingData();
     const rawResponse = await responsePromise.asResponse();
@@ -20,7 +20,7 @@ describe('resource p2p', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('listCountries', async () => {
     const responsePromise = client.p2p.listCountries();
     const rawResponse = await responsePromise.asResponse();
@@ -32,7 +32,7 @@ describe('resource p2p', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('submitGuidedMatching', async () => {
     const responsePromise = client.p2p.submitGuidedMatching();
     const rawResponse = await responsePromise.asResponse();

@@ -8,7 +8,7 @@ const client = new PaxportV2SDK({
 });
 
 describe('resource leader', () => {
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('applyToBecomeLeader', async () => {
     const responsePromise = client.copyTrading.leader.applyToBecomeLeader();
     const rawResponse = await responsePromise.asResponse();
@@ -20,7 +20,7 @@ describe('resource leader', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('checkEligibility', async () => {
     const responsePromise = client.copyTrading.leader.checkEligibility();
     const rawResponse = await responsePromise.asResponse();
@@ -32,7 +32,7 @@ describe('resource leader', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('getAvailableLeaders', async () => {
     const responsePromise = client.copyTrading.leader.getAvailableLeaders();
     const rawResponse = await responsePromise.asResponse();
@@ -44,7 +44,7 @@ describe('resource leader', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('getAvailableLeaders: request options and params are passed correctly', async () => {
     // ensure the request options are being passed correctly by passing an invalid HTTP method in order to cause an error
     await expect(
@@ -64,7 +64,7 @@ describe('resource leader', () => {
     ).rejects.toThrow(PaxportV2SDK.NotFoundError);
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('getDetails', async () => {
     const responsePromise = client.copyTrading.leader.getDetails('id');
     const rawResponse = await responsePromise.asResponse();

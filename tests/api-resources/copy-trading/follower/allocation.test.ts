@@ -8,7 +8,7 @@ const client = new PaxportV2SDK({
 });
 
 describe('resource allocation', () => {
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('addFunds: only required params', async () => {
     const responsePromise = client.copyTrading.follower.allocation.addFunds(
       '182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e',
@@ -23,7 +23,7 @@ describe('resource allocation', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('addFunds: required and optional params', async () => {
     const response = await client.copyTrading.follower.allocation.addFunds(
       '182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e',
@@ -31,7 +31,7 @@ describe('resource allocation', () => {
     );
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('createAllocation', async () => {
     const responsePromise = client.copyTrading.follower.allocation.createAllocation(
       '182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e',
@@ -45,7 +45,7 @@ describe('resource allocation', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('getAllocations', async () => {
     const responsePromise = client.copyTrading.follower.allocation.getAllocations(
       '182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e',
@@ -59,7 +59,7 @@ describe('resource allocation', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('removeFunds: only required params', async () => {
     const responsePromise = client.copyTrading.follower.allocation.removeFunds(
       '182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e',
@@ -74,7 +74,7 @@ describe('resource allocation', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('removeFunds: required and optional params', async () => {
     const response = await client.copyTrading.follower.allocation.removeFunds(
       '182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e',

@@ -8,7 +8,7 @@ const client = new PaxportV2SDK({
 });
 
 describe('resource intent', () => {
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('create', async () => {
     const responsePromise = client.payment.intent.create();
     const rawResponse = await responsePromise.asResponse();
@@ -20,7 +20,7 @@ describe('resource intent', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('retrieve', async () => {
     const responsePromise = client.payment.intent.retrieve('id');
     const rawResponse = await responsePromise.asResponse();
@@ -32,7 +32,7 @@ describe('resource intent', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('checkStatus', async () => {
     const responsePromise = client.payment.intent.checkStatus();
     const rawResponse = await responsePromise.asResponse();
@@ -44,7 +44,7 @@ describe('resource intent', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('confirm', async () => {
     const responsePromise = client.payment.intent.confirm();
     const rawResponse = await responsePromise.asResponse();

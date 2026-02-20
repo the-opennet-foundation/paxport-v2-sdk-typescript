@@ -8,7 +8,7 @@ const client = new PaxportV2SDK({
 });
 
 describe('resource dashboard', () => {
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('getActivity', async () => {
     const responsePromise = client.p2p.dashboard.getActivity();
     const rawResponse = await responsePromise.asResponse();
@@ -20,7 +20,7 @@ describe('resource dashboard', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('getData', async () => {
     const responsePromise = client.p2p.dashboard.getData();
     const rawResponse = await responsePromise.asResponse();
@@ -32,7 +32,7 @@ describe('resource dashboard', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('getPortfolio', async () => {
     const responsePromise = client.p2p.dashboard.getPortfolio();
     const rawResponse = await responsePromise.asResponse();
@@ -44,7 +44,7 @@ describe('resource dashboard', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('getStats', async () => {
     const responsePromise = client.p2p.dashboard.getStats();
     const rawResponse = await responsePromise.asResponse();
@@ -56,7 +56,7 @@ describe('resource dashboard', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('getTransactions', async () => {
     const responsePromise = client.p2p.dashboard.getTransactions();
     const rawResponse = await responsePromise.asResponse();

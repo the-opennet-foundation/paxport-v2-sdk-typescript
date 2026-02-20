@@ -8,7 +8,7 @@ const client = new PaxportV2SDK({
 });
 
 describe('resource settings', () => {
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('retrieve', async () => {
     const responsePromise = client.settings.retrieve();
     const rawResponse = await responsePromise.asResponse();

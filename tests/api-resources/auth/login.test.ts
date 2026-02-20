@@ -8,7 +8,7 @@ const client = new PaxportV2SDK({
 });
 
 describe('resource login', () => {
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('chat: only required params', async () => {
     const responsePromise = client.auth.login.chat({
       email: 'dev@stainless.com',
@@ -25,7 +25,7 @@ describe('resource login', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('chat: required and optional params', async () => {
     const response = await client.auth.login.chat({
       email: 'dev@stainless.com',
@@ -35,7 +35,7 @@ describe('resource login', () => {
     });
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('default', async () => {
     const responsePromise = client.auth.login.default();
     const rawResponse = await responsePromise.asResponse();
@@ -47,7 +47,7 @@ describe('resource login', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('flutter', async () => {
     const responsePromise = client.auth.login.flutter();
     const rawResponse = await responsePromise.asResponse();
@@ -59,7 +59,7 @@ describe('resource login', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('generateNonce', async () => {
     const responsePromise = client.auth.login.generateNonce();
     const rawResponse = await responsePromise.asResponse();
@@ -71,7 +71,7 @@ describe('resource login', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('google', async () => {
     const responsePromise = client.auth.login.google();
     const rawResponse = await responsePromise.asResponse();
@@ -83,7 +83,7 @@ describe('resource login', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('siwe', async () => {
     const responsePromise = client.auth.login.siwe();
     const rawResponse = await responsePromise.asResponse();

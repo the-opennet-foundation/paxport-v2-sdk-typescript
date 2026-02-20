@@ -8,7 +8,7 @@ const client = new PaxportV2SDK({
 });
 
 describe('resource account', () => {
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('delete', async () => {
     const responsePromise = client.user.account.delete();
     const rawResponse = await responsePromise.asResponse();

@@ -8,7 +8,7 @@ const client = new PaxportV2SDK({
 });
 
 describe('resource exchange', () => {
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('getHistoricalChart: only required params', async () => {
     const responsePromise = client.exchange.getHistoricalChart({
       duration: 0,
@@ -26,7 +26,7 @@ describe('resource exchange', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('getHistoricalChart: required and optional params', async () => {
     const response = await client.exchange.getHistoricalChart({
       duration: 0,
@@ -37,7 +37,7 @@ describe('resource exchange', () => {
     });
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('getOrderbook: only required params', async () => {
     const responsePromise = client.exchange.getOrderbook('pair', { currency: 'currency' });
     const rawResponse = await responsePromise.asResponse();
@@ -49,7 +49,7 @@ describe('resource exchange', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('getOrderbook: required and optional params', async () => {
     const response = await client.exchange.getOrderbook('pair', { currency: 'currency', limit: 0 });
   });

@@ -8,7 +8,7 @@ const client = new PaxportV2SDK({
 });
 
 describe('resource affiliate', () => {
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('getDashboard', async () => {
     const responsePromise = client.affiliate.getDashboard();
     const rawResponse = await responsePromise.asResponse();
@@ -20,7 +20,7 @@ describe('resource affiliate', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('getDashboard: request options and params are passed correctly', async () => {
     // ensure the request options are being passed correctly by passing an invalid HTTP method in order to cause an error
     await expect(
@@ -28,7 +28,7 @@ describe('resource affiliate', () => {
     ).rejects.toThrow(PaxportV2SDK.NotFoundError);
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('getLandingPageData', async () => {
     const responsePromise = client.affiliate.getLandingPageData();
     const rawResponse = await responsePromise.asResponse();
@@ -40,7 +40,7 @@ describe('resource affiliate', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('getNetworkNode', async () => {
     const responsePromise = client.affiliate.getNetworkNode();
     const rawResponse = await responsePromise.asResponse();
@@ -52,7 +52,7 @@ describe('resource affiliate', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('getProgramStats', async () => {
     const responsePromise = client.affiliate.getProgramStats();
     const rawResponse = await responsePromise.asResponse();
@@ -64,7 +64,7 @@ describe('resource affiliate', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('listConditions', async () => {
     const responsePromise = client.affiliate.listConditions();
     const rawResponse = await responsePromise.asResponse();

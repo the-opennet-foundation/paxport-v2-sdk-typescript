@@ -8,7 +8,7 @@ const client = new PaxportV2SDK({
 });
 
 describe('resource otp', () => {
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('generate', async () => {
     const responsePromise = client.auth.otp.generate();
     const rawResponse = await responsePromise.asResponse();
@@ -20,7 +20,7 @@ describe('resource otp', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('resend', async () => {
     const responsePromise = client.auth.otp.resend();
     const rawResponse = await responsePromise.asResponse();
@@ -32,7 +32,7 @@ describe('resource otp', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('save', async () => {
     const responsePromise = client.auth.otp.save();
     const rawResponse = await responsePromise.asResponse();
@@ -44,7 +44,7 @@ describe('resource otp', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('toggleStatus', async () => {
     const responsePromise = client.auth.otp.toggleStatus();
     const rawResponse = await responsePromise.asResponse();
@@ -56,7 +56,7 @@ describe('resource otp', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('verify', async () => {
     const responsePromise = client.auth.otp.verify();
     const rawResponse = await responsePromise.asResponse();
@@ -68,7 +68,7 @@ describe('resource otp', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('verifyLogin', async () => {
     const responsePromise = client.auth.otp.verifyLogin();
     const rawResponse = await responsePromise.asResponse();

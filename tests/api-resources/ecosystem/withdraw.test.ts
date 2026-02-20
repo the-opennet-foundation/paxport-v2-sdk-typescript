@@ -8,7 +8,7 @@ const client = new PaxportV2SDK({
 });
 
 describe('resource withdraw', () => {
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('create', async () => {
     const responsePromise = client.ecosystem.withdraw.create();
     const rawResponse = await responsePromise.asResponse();
@@ -20,7 +20,7 @@ describe('resource withdraw', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('maxAmount: only required params', async () => {
     const responsePromise = client.ecosystem.withdraw.maxAmount({ chain: 'chain', currency: 'currency' });
     const rawResponse = await responsePromise.asResponse();
@@ -32,7 +32,7 @@ describe('resource withdraw', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('maxAmount: required and optional params', async () => {
     const response = await client.ecosystem.withdraw.maxAmount({ chain: 'chain', currency: 'currency' });
   });

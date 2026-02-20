@@ -8,7 +8,7 @@ const client = new PaxportV2SDK({
 });
 
 describe('resource forex', () => {
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('getDurations', async () => {
     const responsePromise = client.forex.getDurations();
     const rawResponse = await responsePromise.asResponse();
@@ -20,7 +20,7 @@ describe('resource forex', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('getLandingData', async () => {
     const responsePromise = client.forex.getLandingData();
     const rawResponse = await responsePromise.asResponse();
@@ -32,7 +32,7 @@ describe('resource forex', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('getOverview', async () => {
     const responsePromise = client.forex.getOverview();
     const rawResponse = await responsePromise.asResponse();
@@ -44,7 +44,7 @@ describe('resource forex', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('getOverview: request options and params are passed correctly', async () => {
     // ensure the request options are being passed correctly by passing an invalid HTTP method in order to cause an error
     await expect(
@@ -52,7 +52,7 @@ describe('resource forex', () => {
     ).rejects.toThrow(PaxportV2SDK.NotFoundError);
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('getStats', async () => {
     const responsePromise = client.forex.getStats();
     const rawResponse = await responsePromise.asResponse();
@@ -64,7 +64,7 @@ describe('resource forex', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('getUserSignals', async () => {
     const responsePromise = client.forex.getUserSignals();
     const rawResponse = await responsePromise.asResponse();
@@ -76,7 +76,7 @@ describe('resource forex', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('getUserSignals: request options and params are passed correctly', async () => {
     // ensure the request options are being passed correctly by passing an invalid HTTP method in order to cause an error
     await expect(
@@ -94,7 +94,7 @@ describe('resource forex', () => {
     ).rejects.toThrow(PaxportV2SDK.NotFoundError);
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('listTransactions', async () => {
     const responsePromise = client.forex.listTransactions();
     const rawResponse = await responsePromise.asResponse();
@@ -106,7 +106,7 @@ describe('resource forex', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('listTransactions: request options and params are passed correctly', async () => {
     // ensure the request options are being passed correctly by passing an invalid HTTP method in order to cause an error
     await expect(

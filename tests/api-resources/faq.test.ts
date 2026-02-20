@@ -8,7 +8,7 @@ const client = new PaxportV2SDK({
 });
 
 describe('resource faq', () => {
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('retrieve', async () => {
     const responsePromise = client.faq.retrieve('id');
     const rawResponse = await responsePromise.asResponse();
@@ -20,7 +20,7 @@ describe('resource faq', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('listCategories', async () => {
     const responsePromise = client.faq.listCategories();
     const rawResponse = await responsePromise.asResponse();
@@ -32,7 +32,7 @@ describe('resource faq', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('listPublic', async () => {
     const responsePromise = client.faq.listPublic();
     const rawResponse = await responsePromise.asResponse();
@@ -44,7 +44,7 @@ describe('resource faq', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('listPublic: request options and params are passed correctly', async () => {
     // ensure the request options are being passed correctly by passing an invalid HTTP method in order to cause an error
     await expect(
@@ -61,7 +61,7 @@ describe('resource faq', () => {
     ).rejects.toThrow(PaxportV2SDK.NotFoundError);
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('retrieveStats', async () => {
     const responsePromise = client.faq.retrieveStats();
     const rawResponse = await responsePromise.asResponse();
@@ -73,7 +73,7 @@ describe('resource faq', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('search', async () => {
     const responsePromise = client.faq.search();
     const rawResponse = await responsePromise.asResponse();
@@ -85,7 +85,7 @@ describe('resource faq', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('submitFeedback', async () => {
     const responsePromise = client.faq.submitFeedback('id');
     const rawResponse = await responsePromise.asResponse();
@@ -97,7 +97,7 @@ describe('resource faq', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('submitQuestion', async () => {
     const responsePromise = client.faq.submitQuestion();
     const rawResponse = await responsePromise.asResponse();

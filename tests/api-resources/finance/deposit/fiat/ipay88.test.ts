@@ -8,7 +8,7 @@ const client = new PaxportV2SDK({
 });
 
 describe('resource ipay88', () => {
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('create', async () => {
     const responsePromise = client.finance.deposit.fiat.ipay88.create();
     const rawResponse = await responsePromise.asResponse();
@@ -20,7 +20,7 @@ describe('resource ipay88', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('retrieveStatus: only required params', async () => {
     const responsePromise = client.finance.deposit.fiat.ipay88.retrieveStatus({
       amount: 0,
@@ -36,7 +36,7 @@ describe('resource ipay88', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('retrieveStatus: required and optional params', async () => {
     const response = await client.finance.deposit.fiat.ipay88.retrieveStatus({
       amount: 0,
@@ -45,7 +45,7 @@ describe('resource ipay88', () => {
     });
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('verify', async () => {
     const responsePromise = client.finance.deposit.fiat.ipay88.verify();
     const rawResponse = await responsePromise.asResponse();
@@ -57,7 +57,7 @@ describe('resource ipay88', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('webhook', async () => {
     const responsePromise = client.finance.deposit.fiat.ipay88.webhook();
     const rawResponse = await responsePromise.asResponse();

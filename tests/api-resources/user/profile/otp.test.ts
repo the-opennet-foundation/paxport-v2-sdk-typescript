@@ -8,7 +8,7 @@ const client = new PaxportV2SDK({
 });
 
 describe('resource otp', () => {
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('generateSecret', async () => {
     const responsePromise = client.user.profile.otp.generateSecret();
     const rawResponse = await responsePromise.asResponse();
@@ -20,7 +20,7 @@ describe('resource otp', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('save', async () => {
     const responsePromise = client.user.profile.otp.save();
     const rawResponse = await responsePromise.asResponse();
@@ -32,7 +32,7 @@ describe('resource otp', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('toggle', async () => {
     const responsePromise = client.user.profile.otp.toggle();
     const rawResponse = await responsePromise.asResponse();
@@ -44,7 +44,7 @@ describe('resource otp', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('verify', async () => {
     const responsePromise = client.user.profile.otp.verify();
     const rawResponse = await responsePromise.asResponse();

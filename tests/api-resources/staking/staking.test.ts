@@ -8,7 +8,7 @@ const client = new PaxportV2SDK({
 });
 
 describe('resource staking', () => {
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('calculateRewards', async () => {
     const responsePromise = client.staking.calculateRewards();
     const rawResponse = await responsePromise.asResponse();
@@ -20,7 +20,7 @@ describe('resource staking', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('getLanding', async () => {
     const responsePromise = client.staking.getLanding();
     const rawResponse = await responsePromise.asResponse();
@@ -32,7 +32,7 @@ describe('resource staking', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('getStats', async () => {
     const responsePromise = client.staking.getStats();
     const rawResponse = await responsePromise.asResponse();

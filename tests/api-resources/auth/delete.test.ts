@@ -8,7 +8,7 @@ const client = new PaxportV2SDK({
 });
 
 describe('resource delete', () => {
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('confirm', async () => {
     const responsePromise = client.auth.delete.confirm();
     const rawResponse = await responsePromise.asResponse();
@@ -20,7 +20,7 @@ describe('resource delete', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('generateConfirmationCode', async () => {
     const responsePromise = client.auth.delete.generateConfirmationCode();
     const rawResponse = await responsePromise.asResponse();

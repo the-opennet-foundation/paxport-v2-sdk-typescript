@@ -8,7 +8,7 @@ const client = new PaxportV2SDK({
 });
 
 describe('resource refund', () => {
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('retrieve', async () => {
     const responsePromise = client.ico.refund.retrieve('offeringId');
     const rawResponse = await responsePromise.asResponse();
@@ -20,7 +20,7 @@ describe('resource refund', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('process', async () => {
     const responsePromise = client.ico.refund.process();
     const rawResponse = await responsePromise.asResponse();

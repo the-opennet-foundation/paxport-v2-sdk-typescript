@@ -8,7 +8,7 @@ const client = new PaxportV2SDK({
 });
 
 describe('resource order', () => {
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('create', async () => {
     const responsePromise = client.ecommerce.order.create();
     const rawResponse = await responsePromise.asResponse();
@@ -20,7 +20,7 @@ describe('resource order', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('retrieve', async () => {
     const responsePromise = client.ecommerce.order.retrieve('id');
     const rawResponse = await responsePromise.asResponse();
@@ -32,7 +32,7 @@ describe('resource order', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('list', async () => {
     const responsePromise = client.ecommerce.order.list();
     const rawResponse = await responsePromise.asResponse();
@@ -44,7 +44,7 @@ describe('resource order', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('list: request options and params are passed correctly', async () => {
     // ensure the request options are being passed correctly by passing an invalid HTTP method in order to cause an error
     await expect(
@@ -62,7 +62,7 @@ describe('resource order', () => {
     ).rejects.toThrow(PaxportV2SDK.NotFoundError);
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('checkProductPurchase', async () => {
     const responsePromise = client.ecommerce.order.checkProductPurchase('productId');
     const rawResponse = await responsePromise.asResponse();
@@ -74,7 +74,7 @@ describe('resource order', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('track', async () => {
     const responsePromise = client.ecommerce.order.track('id');
     const rawResponse = await responsePromise.asResponse();

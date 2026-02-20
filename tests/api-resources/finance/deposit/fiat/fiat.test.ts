@@ -8,7 +8,7 @@ const client = new PaxportV2SDK({
 });
 
 describe('resource fiat', () => {
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('create', async () => {
     const responsePromise = client.finance.deposit.fiat.create();
     const rawResponse = await responsePromise.asResponse();

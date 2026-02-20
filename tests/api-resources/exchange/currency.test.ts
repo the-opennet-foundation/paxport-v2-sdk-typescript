@@ -8,7 +8,7 @@ const client = new PaxportV2SDK({
 });
 
 describe('resource currency', () => {
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('retrieve', async () => {
     const responsePromise = client.exchange.currency.retrieve('id');
     const rawResponse = await responsePromise.asResponse();
@@ -20,7 +20,7 @@ describe('resource currency', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('list', async () => {
     const responsePromise = client.exchange.currency.list();
     const rawResponse = await responsePromise.asResponse();

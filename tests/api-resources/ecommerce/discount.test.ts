@@ -8,7 +8,7 @@ const client = new PaxportV2SDK({
 });
 
 describe('resource discount', () => {
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('apply', async () => {
     const responsePromise = client.ecommerce.discount.apply('productId');
     const rawResponse = await responsePromise.asResponse();
@@ -20,7 +20,7 @@ describe('resource discount', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('validate', async () => {
     const responsePromise = client.ecommerce.discount.validate();
     const rawResponse = await responsePromise.asResponse();

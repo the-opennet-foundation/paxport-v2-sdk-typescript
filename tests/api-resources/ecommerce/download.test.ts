@@ -8,7 +8,7 @@ const client = new PaxportV2SDK({
 });
 
 describe('resource download', () => {
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('downloadFile', async () => {
     const responsePromise = client.ecommerce.download.downloadFile('orderItemId');
     const rawResponse = await responsePromise.asResponse();
@@ -20,7 +20,7 @@ describe('resource download', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('streamFile', async () => {
     const responsePromise = client.ecommerce.download.streamFile('orderItemId');
     const rawResponse = await responsePromise.asResponse();

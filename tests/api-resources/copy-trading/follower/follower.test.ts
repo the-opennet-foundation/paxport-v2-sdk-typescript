@@ -8,7 +8,7 @@ const client = new PaxportV2SDK({
 });
 
 describe('resource follower', () => {
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('followLeader', async () => {
     const responsePromise = client.copyTrading.follower.followLeader();
     const rawResponse = await responsePromise.asResponse();
@@ -20,7 +20,7 @@ describe('resource follower', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('getDetails', async () => {
     const responsePromise = client.copyTrading.follower.getDetails('id');
     const rawResponse = await responsePromise.asResponse();
@@ -32,7 +32,7 @@ describe('resource follower', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('getSubscriptions', async () => {
     const responsePromise = client.copyTrading.follower.getSubscriptions();
     const rawResponse = await responsePromise.asResponse();
@@ -44,7 +44,7 @@ describe('resource follower', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('getSubscriptions: request options and params are passed correctly', async () => {
     // ensure the request options are being passed correctly by passing an invalid HTTP method in order to cause an error
     await expect(
@@ -55,7 +55,7 @@ describe('resource follower', () => {
     ).rejects.toThrow(PaxportV2SDK.NotFoundError);
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('pauseSubscription', async () => {
     const responsePromise = client.copyTrading.follower.pauseSubscription(
       '182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e',
@@ -69,7 +69,7 @@ describe('resource follower', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('resumeSubscription', async () => {
     const responsePromise = client.copyTrading.follower.resumeSubscription(
       '182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e',
@@ -83,7 +83,7 @@ describe('resource follower', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('stopSubscription', async () => {
     const responsePromise = client.copyTrading.follower.stopSubscription(
       '182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e',
@@ -97,7 +97,7 @@ describe('resource follower', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('updateSettings', async () => {
     const responsePromise = client.copyTrading.follower.updateSettings(
       '182bd5e5-6e1a-4fe4-a799-aa6d9a6ab26e',

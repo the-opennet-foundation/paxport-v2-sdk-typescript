@@ -8,7 +8,7 @@ const client = new PaxportV2SDK({
 });
 
 describe('resource ico', () => {
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('retrieveBlockchain', async () => {
     const responsePromise = client.ico.retrieveBlockchain();
     const rawResponse = await responsePromise.asResponse();
@@ -20,7 +20,7 @@ describe('resource ico', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('retrieveLanding', async () => {
     const responsePromise = client.ico.retrieveLanding();
     const rawResponse = await responsePromise.asResponse();
@@ -32,7 +32,7 @@ describe('resource ico', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('retrievePlan', async () => {
     const responsePromise = client.ico.retrievePlan();
     const rawResponse = await responsePromise.asResponse();
@@ -44,7 +44,7 @@ describe('resource ico', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('retrieveStats', async () => {
     const responsePromise = client.ico.retrieveStats();
     const rawResponse = await responsePromise.asResponse();

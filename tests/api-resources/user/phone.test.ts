@@ -8,7 +8,7 @@ const client = new PaxportV2SDK({
 });
 
 describe('resource phone', () => {
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('sendVerificationCode', async () => {
     const responsePromise = client.user.phone.sendVerificationCode();
     const rawResponse = await responsePromise.asResponse();
@@ -20,7 +20,7 @@ describe('resource phone', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('verify', async () => {
     const responsePromise = client.user.phone.verify();
     const rawResponse = await responsePromise.asResponse();

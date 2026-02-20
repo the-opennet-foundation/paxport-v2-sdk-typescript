@@ -8,7 +8,7 @@ const client = new PaxportV2SDK({
 });
 
 describe('resource klarna', () => {
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('create', async () => {
     const responsePromise = client.finance.deposit.fiat.klarna.create();
     const rawResponse = await responsePromise.asResponse();
@@ -20,7 +20,7 @@ describe('resource klarna', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('retrieveStatus: only required params', async () => {
     const responsePromise = client.finance.deposit.fiat.klarna.retrieveStatus({ order_id: 'order_id' });
     const rawResponse = await responsePromise.asResponse();
@@ -32,7 +32,7 @@ describe('resource klarna', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('retrieveStatus: required and optional params', async () => {
     const response = await client.finance.deposit.fiat.klarna.retrieveStatus({
       order_id: 'order_id',
@@ -40,7 +40,7 @@ describe('resource klarna', () => {
     });
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('verify', async () => {
     const responsePromise = client.finance.deposit.fiat.klarna.verify();
     const rawResponse = await responsePromise.asResponse();
@@ -52,7 +52,7 @@ describe('resource klarna', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('webhook', async () => {
     const responsePromise = client.finance.deposit.fiat.klarna.webhook();
     const rawResponse = await responsePromise.asResponse();

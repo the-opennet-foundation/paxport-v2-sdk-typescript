@@ -8,7 +8,7 @@ const client = new PaxportV2SDK({
 });
 
 describe('resource ticker', () => {
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('retrieve: only required params', async () => {
     const responsePromise = client.exchange.ticker.retrieve('pair', { currency: 'currency' });
     const rawResponse = await responsePromise.asResponse();
@@ -20,12 +20,12 @@ describe('resource ticker', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('retrieve: required and optional params', async () => {
     const response = await client.exchange.ticker.retrieve('pair', { currency: 'currency' });
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('list', async () => {
     const responsePromise = client.exchange.ticker.list();
     const rawResponse = await responsePromise.asResponse();

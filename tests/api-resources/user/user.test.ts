@@ -8,7 +8,7 @@ const client = new PaxportV2SDK({
 });
 
 describe('resource user', () => {
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('getAnalysis', async () => {
     const responsePromise = client.user.getAnalysis();
     const rawResponse = await responsePromise.asResponse();
@@ -20,7 +20,7 @@ describe('resource user', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('getMedia', async () => {
     const responsePromise = client.user.getMedia();
     const rawResponse = await responsePromise.asResponse();
@@ -32,7 +32,7 @@ describe('resource user', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('getMedia: request options and params are passed correctly', async () => {
     // ensure the request options are being passed correctly by passing an invalid HTTP method in order to cause an error
     await expect(

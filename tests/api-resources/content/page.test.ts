@@ -8,7 +8,7 @@ const client = new PaxportV2SDK({
 });
 
 describe('resource page', () => {
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('retrieve', async () => {
     const responsePromise = client.content.page.retrieve(0);
     const rawResponse = await responsePromise.asResponse();
@@ -20,7 +20,7 @@ describe('resource page', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('list', async () => {
     const responsePromise = client.content.page.list();
     const rawResponse = await responsePromise.asResponse();

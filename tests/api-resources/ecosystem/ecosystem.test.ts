@@ -8,7 +8,7 @@ const client = new PaxportV2SDK({
 });
 
 describe('resource ecosystem', () => {
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('getChart: only required params', async () => {
     const responsePromise = client.ecosystem.getChart({
       from: 0,
@@ -25,7 +25,7 @@ describe('resource ecosystem', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('getChart: required and optional params', async () => {
     const response = await client.ecosystem.getChart({
       from: 0,

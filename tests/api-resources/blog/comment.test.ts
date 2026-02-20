@@ -8,7 +8,7 @@ const client = new PaxportV2SDK({
 });
 
 describe('resource comment', () => {
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('create', async () => {
     const responsePromise = client.blog.comment.create('postId');
     const rawResponse = await responsePromise.asResponse();
@@ -20,7 +20,7 @@ describe('resource comment', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('update', async () => {
     const responsePromise = client.blog.comment.update('id');
     const rawResponse = await responsePromise.asResponse();
@@ -32,7 +32,7 @@ describe('resource comment', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('list', async () => {
     const responsePromise = client.blog.comment.list('postId');
     const rawResponse = await responsePromise.asResponse();
