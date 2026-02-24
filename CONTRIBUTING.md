@@ -60,7 +60,7 @@ $ yarn link @paxeer-network/paxport-v2-sdk
 # With pnpm
 $ pnpm link --global
 $ cd ../my-package
-$ pnpm link -—global @paxeer-network/paxport-v2-sdk
+$ pnpm link --global @paxeer-network/paxport-v2-sdk
 ```
 
 ## Running tests
